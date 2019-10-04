@@ -1,0 +1,24 @@
+{
+  "name": "TP1",
+  "version": "0.0.1",
+  "description": "TP1 de la formation typescript de Zenika",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "lint": "tslint src/**/*.ts",
+    "build": "rimraf dist && tsc",
+    "test": "npm run build ; ava dist/__tests__/*.js",
+    "Wtest": "npm run build && ava dist/__tests__/*.js"
+  },
+  "author": "Zenika",
+  "license": "Unlicense",
+  "devDependencies": {
+    "@types/node": "7.0.10",
+    "@types/sinon": "^4.3.3",
+    "ava": "^0.25.0",
+    "rimraf": "^2.6.1",
+    "sinon": "^5.0.7",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  }
+}
